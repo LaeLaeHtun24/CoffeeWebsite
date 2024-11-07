@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique Coffee Shop</title>
+    <link rel="stylesheet" href="coffeeshop.css">
+    <script src="menuIcon.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="Image/coffeelogo.jpg">
+</head>
+<body>
+    <main>
+        <header>
+            <div>
+                <nav>
+                    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+                    <div class="name"> <img class="logo" src="Image/coffeelogo.jpg" alt=""> <strong><br> Bean Boutique<br> Coffee Shop </strong></div>
+                    <ul id="nav-list">
+                        <li><a href="index.html">Home Page</a></li>
+                        <li><a href="coffeeselection.html">Coffee Selection</a></li>
+                        <li><a href="equipment.html">Brewing Equipment</a></li>
+                        <li><a href="Eventsworkshop.html">Events & WorkShops</a></li>
+                        <li><a href="promotion.html">Special Offers & Subscription</a></li>
+                        <li><a href="Cart.html">Shooping Cart</a></li>
+                    </ul>
+                
+                    <div id="searchbox">
+                        <input type="text" id="search" name="search" placeholder="Search..">
+                    </div>
+                </nav>
+            </div>
+        </header>
+    
+        <div>
+            <div class="shooping-container">
+                <div class="shoopingcart-items">
+                    <img src="Image/Starbucks.png" alt="Starbucks powder">
+                    <section class="item">
+                        <h2>Starbucks Caramel Latte Caramel & Smooth Premium Instant Coffee Mix 28G</h2>
+                        <p>$8.50</p>
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1">
+                    </section>
+                </div>
+        
+                <div class="shoopingcart-items">
+                    <img src="Image/Whit-mocha-indulgent.jpg" alt="White mocha powder">
+                    <section class="item">
+                        <h2>Starbucks White Mocha Indulgent & Rich Premium Instant Coffee Mix 24G</h2>
+                        <p>$8.00</p>
+                        <label for="quantity2">Quantity:</label>
+                        <input type="number" id="quantity2" name="quantity" min="1" value="1">
+                    </section>
+                </div>
+                
+                <div class="shoopingcart-items">
+                    <img src="Image/Range-Espresso57-4069x2289.webp" alt="Davidoff powder">
+                    <section class="item">
+                        <h2>Davidoff Espresso Dark Roast Coffee 100G
+                            Whole Bean 100% ARABICA</h2>
+                        <p>$9.00</p>
+                        <label for="quantity3">Quantity:</label>
+                        <input type="number" id="quantity3" name="quantity" min="1" value="1">
+                    </section>
+                </div>
+    
+                <div class="shoopingcart-items">
+                    <img src="Image/Forté™BG.avif" alt="Forté™ BG">
+                    <section class="item">
+                        <h2>Forté™ BG</h2>
+                        <p>$479.56</p>
+                        <label for="quantity4">Quantity:</label>
+                        <input type="number" id="quantity4" name="quantity" min="1" value="1">
+                    </section>
+                </div>
+    
+                <div class="shoopingcart-items">
+                    <img src="Image/Aiden-Precision-Coffee-Maker.webp" alt="Aiden Precision Coffee Maker">
+                    <section class="item">
+                        <h2>Aiden Precision Coffee Maker</h2>
+                        <p>$358.44</p>
+                        <label for="quantity5">Quantity:</label>
+                        <input type="number" id="quantity5" name="quantity" min="1" value="1">
+                    </section>
+                </div>
+                
+                <div class="shoopingcart-items">
+                    <img src="Image/Atmos-Vacuum-Canister.webp" alt="Atmos Vacuum Canister">
+                    <section class="item">
+                        <h2>Atmos Vacuum Canister</h2>
+                        <p>$30.00</p>
+                        <label for="quantity6">Quantity:</label>
+                        <input type="number" id="quantity6" name="quantity" min="1" value="1">
+                    </section>
+                </div>
+            </div>
+        </div>
+    
+        <section class="shoopingcart-total">
+                <h5>Total: $893.5</h5>
+                <button type="button">Order Now</button>
+                <button type="button">Remove</button>
+        </section>
+        <footer class="footer">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <p class="copyright">Copyright ©2024, Bean Boutique Coffee Shop</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
