@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Bean Boutique Coffee Shop</title>
+            <link rel="stylesheet" href="coffeeshop.css">
+            <script src="slideshow.js"></script>
+            <script src="popubox.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+            <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        </head>
+<body>
+    <main>
+        <header>
+            <div class="homepage">
+                <nav>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <div class="name"> <img class="logo" src="Image/coffeelogo.jpg" alt=""> <strong><br> Bean Boutique<br> Coffee Shop </strong></div>
+        <ul id="nav-list">
+            <li><a href="homepage.html">Home Page</a></li>
+            <li><a href="coffeeselection.html">Coffee Selection</a></li>
+            <li><a href="equipment.html">Brewing Equipment</a></li>
+            <li><a href="Eventsworkshop.html">Events & WorkShops</a></li>
+            <li><a href="promotion.html">Special Offers & Subscription</a></li>
+            <li><a href="Cart.html">Shooping Cart</a></li>
+        </ul>
+        <div id="searchbox">
+            <input type="text" id="search" name="search" placeholder="Search.."> 
+            </div>
+        </nav>
+        <section class="intro">
+            <div class="intro-content">
+                <h1>YOUR COFFEE TO GO</h1>
+                <p>Order your coffee drinks from Bean Boutique with just a few taps. You can also shop online for beans, merch and more!</p>
+            </div>
+        </section>
+    </div>
+</header>
+
+
+<br>
+        
+<section class="our-history">
+    <div  class="outside">
+        <div class="inside">
+            <img src="Image/people-enjoy-coffee.1.jpg" alt ="Coffee Shop Image" id="history">
+<div class="history-content">
+    <h2>Our History</h2>
+    <p>Bean Boutique started as a small coffee shop with a passion for good coffee.
+        It has become a cozy place for friends togather while enjoying fresh juices.
+        Over time, Bean Boutique has become known for its quality beans and friendly service. Today coffee lovers
+        everywhere offer not only delicious coffee drinks, but also beans and products.
+    </p>
+</div>
+        </div>
+    </div>
+</section>
+
+<br>
+
+<section class="our-coffee">
+    <div  class="output">
+        <div class="input">
+            <img src="Image/brewing-equipment.1.jpg" alt ="Coffee Shop Image">
+<div class="coffee-content">
+    <h2>Our Coffee</h2>
+    <p> Our coffee from Bean Boutique is fresh and full of flavour. We use the finest beans to create a perfect cup every time. 
+        Enjoy the best coffee with us!
+    </p>
+</div>
+        </div>
+    </div>
+</section>
+        <div class="best-selling">
+            <h3>Best Selling Items In Our Shop</h3>
+            <p>If you want more, click <a href="coffeeselection.html">Coffee Slection</a> and you can check what items are available in our shop.</p>
+        </div>
+        <section class="coffee-catalogue">
+            <div class="coffee-grid">
+                <div class="coffee-item">
+                    <img src="Image/americano-coffee-1024x683.jpg" alt="Americano">
+                    <h3>Americano Coffee</h3>
+                    <p class="description">Made from equal parts espresso and hot water, it's has a strong flavor but can be served black or with a little milk.</p>
+                    <p class="price">$11.00</p>
+                    <button onclick="window.location.href='Cart.html'">Add to Cart</button>
+                </div>
+
+                <div class="coffee-item">
+                    <img src="Image/Lattee.avif" alt="Latte">
+                    <h3>Latte</h3>
+                    <p class="description">Coffee and milk are like bread and butter, and creamy milk reduces the strong flavor coffee and is often eat with a cup of espresso.</p>
+                    <p class="price">$11.50</p>
+                    <button onclick="window.location.href='Cart.html'">Add to Cart</button>
+                </div>
+
+                <div class="coffee-item">
+                    <img src="Image/mocha.jpg" alt="Mocha">
+                    <h3>Mocha</h3>
+                    <p class="description">A delicious blend of velvet chocolate and milk, giving it a pleasant and sweet taste.This taste is good.</p>
+                    <p class="price">$15.00</p>
+                    <button onclick="window.location.href='Cart.html'">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="dealPopup" class="deal-popup">
+                <div class="deal-popup-content">
+                    <span class="deal-close-btn" onclick="closeDeal()">&times;</span>
+                    <h3>Shop now and get gifts at Bean Boquitue!</h3> <br>
+                        <p>25% off discount</p>
+                    <button class="deal-btn order-btn" onclick="startOrder()">Buy Now</button>
+                    <button class="deal-btn subscribe-btn" onclick="startSubscribe()">Shooping</button>
+                </div>
+            </div>
+        </section>
+
+<footer class="footer">
+    <div class="container text-center">
+        <div class="row">
+                            
+            <div class="col-12 mb-3">
+        <ul class="social-icons">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+    </div>
+</div>
+        <div class="row">                           
+            <div class="col-12">
+        <p class="copyright">Copyright ©2024, Bean Boutique Coffee Shop</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</main>
+</body>
+</html>
