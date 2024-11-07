@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique Coffee Shop</title>
+    <link rel="stylesheet" href="coffeeshop.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="Image/coffeelogo.jpg">
+</head>
+<body>
+    <header class="equipment">
+        <div class="equipment-menu">
+            <nav>
+                <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+                <div class="name"> <img class="logo" src="Image/coffeelogo.jpg" alt=""> <strong><br> Bean Boutique<br> Coffee Shop </strong></div>
+                <ul id="nav-list" >
+                    <li><a href="index.html">Home Page</a></li>
+                    <li><a href="coffeeselection.html">Coffee Selection</a></li>
+                    <li><a href="equipment.html">Brewing Equipment</a></li>
+                    <li><a href="Eventsworkshop.html">Events & WorkShops</a></li>
+                    <li><a href="promotion.html">Special Offers & Subscription</a></li>
+                    <li><a href="Cart.html">Shooping Cart</a></li>
+                </ul>
+                <div id="searchbox">
+                    <input type="text" id="search" name="search" placeholder="Search..">
+                </div>
+            </nav>
+            <div class="intro-equipment">
+                <div class="equipment-content">
+                    <p>Are you looking for best quality domestic coffee brewing equipments??</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="coffee-catalogue">
+        <div class="coffee-grid">
+            <div class="coffee-item">
+                <img src="Image/downloap.png" alt="AeroPress Coffee Maker">
+                <h3>AeroPress Coffee Maker</h3>
+                <p class="description">Enjoy hundreds of recipes from espresso style to cold brew.</p>
+                <p class="price">$232.00</p>
+                <div class="button-container">
+                    <button onclick="window.location.href='Cart.html'">Add to Cart</button>
+                </div>
+            </div>
+            <div class="coffee-item">
+                <img src="Image/Stagg-EKG-Pro-Electric-Kettle.webp" alt="Stagg EKG Pro Electric Kettle">
+                <h3>Stagg EKG Pro Electric Kettle</h3>
+                <p class="description">Fully customizable brew settings, precision temperature and pouring control, and access to ongoing updates over WiFi.</p>
+                <p class="price">$240.46</p>
+                <div class="button-container">
+                    <button onclick="window.location.href='Cart.html'">Add to Cart</button>
+                </div>
+            </div>
+            <div class="coffee-item">
+                <img src="Image/Encore™ESP.avif" alt="Encore™ ESP">
+                <h3>Encore™ ESP</h3>
+                <p class="description">Encore™ ESP delivers the grind resolution you need to brew creamy, syrupy shots of espresso.</p>
+                <p class="price">$329.98</p>
+                <div class="button-container">
+                    <button onclick="window.location.href='Cart.html'">Add to Cart</button>
+                </div>
+            </div>
+            <div class="coffee-item">
+                <img src="Image/Opus-Conical-Burr-Grinder.webp" alt="Opus Conical Burr Grinder">
+                <h3>Opus Conical Burr Grinder</h3>
+                <p class="description">Opus is a powerful all-purpose grinder that effortlessly unlocks your coffee’s potential across the full range of brewing styles, from true espresso to the coarsest cold brew.</p>
+                <p class="price">$304.45</p>
+                <div class="button-container">
+                    <button onclick="window.location.href='Cart.html'">Add to Cart</button>
+                </div>
+            </div>
+            <div class="coffee-item">
+                <img src="Image/Ode-Brew-Grinder-Gen2.webp" alt="Ode Brew Grinder Gen 2">
+                <h3>Ode Brew Grinder Gen 2</h3>
+                <p class="description">Featuring new Gen 2 Brew Burrs for more precision and range, streamlined design, and expanded capacity. </p>
+                <p class="price">$450.00</p>
+                <div class="button-container">
+                    <button onclick="window.location.href='Cart.html'">Add to Cart</button>
+                </div>
+            </div>
+            <div class="coffee-item">
+                <img src="Image/Sette™270Wi.avif" alt="Sette™ 270Wi">
+                <h3>Sette™ 270Wi</h3>
+                <p class="description">The integrated scale offers hands-free, direct-to-portafilter dosing accurate to the tenth of a gram.</p>
+                <p class="price">$436.99</p>
+                <div class="button-container">
+                    <button onclick="window.location.href='Cart.html'">Add to Cart</button>
+                </div>
+            </div>
+            <div  class="coffee-item">
+                <img src="Image/Forté™BG.avif" alt="Forté™ BG">
+                <h3>Forté™ BG</h3>
+                <p class="description">The Forté™ BG comes equipped with 54mm steel flat burrs to produce high-clarity brews worthy of the world-class coffee you're about to grind.</p>
+                <p class="price">$479.56</p>
+                <div class="button-container">
+                    <button class="view">View Details</button>
+                    <button onclick="window.location.href='Cart.html'">Add to Cart</button>
+                </div>
+            </div>
+            <div class="coffee-item">
+                <img src="Image/Aiden-Precision-Coffee-Maker.webp" alt="Aiden Precision Coffee Maker">
+                <h3>Aiden Precision Coffee Maker</h3>
+                <p class="description">Precision control meets unrivaled convenience. Brew pour-over quality coffee with the press of a button.</p>
+                <p class="price">$358.44</p>
+                <div class="button-container">
+                    <button class="view">View Details</button>
+                    <button onclick="window.location.href='Cart.html'">Add to Cart</button>
+                </div>
+            </div>
+            <div class="coffee-item">
+                <img src="Image/Atmos-Vacuum-Canister.webp" alt="Atmos Vacuum Canister">
+                <h3>Atmos Vacuum Canister</h3>
+                <p class="description">Keep coffee and food fresher for longer. This airtight canister features a vacuum pump in the lid to remove air and reduce oxidation. </p>
+                <p class="price">$30.00</p>
+                <div class="button-container">
+                    <button onclick="window.location.href='Atmos Vacuum Canister.html'">View Details</button>
+                    <button onclick="window.location.href='Cart.html'">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="row">                 
+                <div class="col-12 mb-3">
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">            
+                <div class="col-12">
+                    <p class="copyright">Copyright ©2024, Bean Boutique Coffee Shop</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique Coffee Shop</title>
+    <link rel="stylesheet" href="coffeeshop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="Image/coffeelogo.jpg">
+</head>
+<body>
+    <main>
+        <header class="coffee-shop">
+            <div class="event">
+                <nav>
+                    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+                    <div class="name"> <img class="logo" src="Image/coffeelogo.jpg" alt=""> <strong><br> Bean Boutique<br> Coffee Shop </strong></div>
+                    <ul id="nav-list">
+                        <li><a href="index.html">Home Page</a></li>
+                        <li><a href="coffeeselection.html">Coffee Selection</a></li>
+                        <li><a href="equipment.html">Brewing Equipment</a></li>
+                        <li><a href="Eventsworkshop.html">Events & WorkShops</a></li>
+                        <li><a href="promotion.html">Special Offers & Subscription</a></li>
+                         <li><a href="Cart.html">Shooping Cart</a></li>
+                    </ul>
+                    <div id="searchbox">
+                        <input type="text" id="search" name="search" placeholder="Search..">
+                    </div>
+                </nav>
+                <section class="intro-workshop">
+                    <div class="workshop">
+                        <h1>Join Our Coffee Event & WorkShops</h1>
+                        <p>We offer a range of events for coffee lovers, from hands-on workshops to fun community gatherings.
+                            Discover more below and sign up for your favourites event!
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </header>
+
+    <section class="workshop-selection">
+        <div class="workshop-contact">
+            <p>Ladies and gentlemen! All of you can participate in the following events by singup.</p>
+        </div>
+        <div class="workshop-gridle">
+            <div class="workshop-c">
+                <h3>Local Community Gatherings</h3>
+                <img src="Image/LocalCommunityGatherings.jpg" alt="Local Community Gatherings">
+                <p> Help us reunite locals into coffee lovers, share techniques of brewing, stories, and favorite coffee tips in a cozy, friendly atmosphere.</p>
+                <ul>
+                  <li>Socialize with local roasters </li>
+                  <li>Tasting and sampling of coffee</li>
+                  <li>Community-driven brewing tips</li>
+                </ul>
+            </div>
+            
+            <div class="workshop-c">
+                <h3>Performance Nights</h3>
+                <img src="Image/PerformanceNights.jpg" alt="Performance Nights">
+                <p>Simply enjoy live music over art and coffee! Perfect for anyone enjoying cultural events combined with great brews.</p>
+                <ul>
+                    <li>Live music & Entertainment</li>
+                    <li>Complimentary coffee tastings</li>
+                    <li>Open Mic for Budding Artists</li>
+                </ul>
+            </div>
+    
+            <div class="workshop-c">
+                <h3>Workshops and Classes</h3>
+                <img src="Image/Workshops-and-Classes.jpg" alt="Workshops and Classes">
+                <p>Improve your ability to make coffee by taking hands-on classes from expert baristas and coffee roasters.</p>
+                <ul>
+                    <li> Brew techniques for the very beginner and advanced alike.</li>
+                    <li> Lattee Art andDesign sessions </li>
+                    <li> In-depth knowledge in coffee roasting </li>
+                </ul>
+            </div>
+    
+            <div class="workshop-c">
+                <h3>Couple Widget</h3>
+                <img src="Image/CoupleWidget.jpg" alt="">
+                <p> Share a special coffee experience with your loved one. This event will clue couples into bonding over coffee activities..</p>
+                <ul>
+                    <li> Brewing and testing sessions with the partner </li>
+                    <li> Immersive coffee-making experiences </li>
+                    <li> Exclusive Couple Coffee Blends </li>
+                </ul>
+            </div>
+
+            <div class="workshop-c">
+                <h3>Friendship with Together</h3>
+                <img src="Image/Friendship-with-together.webp" alt="Friendship with Together">
+                <p>Come with your friends or join in to meet new people over coffee. As is the guarantee, great connections at this event are over coffee. </p>
+                <ul>
+                    <li> Group coffee-tasting sessions </li>
+                    <li> Icebreaker games and activities </li>
+                    <li> Mingling with strange brews. </li>
+                </ul>
+            </div>
+
+            <div class="workshop-c">
+                <h3>Latte Art Workshop</h3>
+                <img src="Image/shutterstock_590116298.jpg" alt="Latte Art Workshop">
+                <p>Have our professional baristas teach you how to create this beauty in every cup! For coffee lovers.</p>
+                <ul>
+                    <li><strong>Date:</strong> November 15, 2024<ul></li>
+                    <li><strong>Time:</strong> 9:00 to 3:00 <ul></li>
+                    <li><strong>Place:</strong> Yangon, Hladen<ul></li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+        <section class="signup">
+            <h2>Join Our Upcoming Events</h2>
+            <form id="eventForm" action="mailto:hnineaindraywai123@gmail.com">
+                <label for="name1">First Name:</label>
+                <input type="text" id="name1" name="firstname" required>
+
+                <label for="name1">Last Name:</label>
+                <input type="text" id="name2" name="lastname" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="event">Select Event:</label>
+                <select id="event" name="event">
+                    <option value="community">Local Community Gatherings</option>
+                    <option value="openmic">Performance Nights</option>
+                    <option value="workshops">Workshops and Classes</option>
+                    <option value="seasonal">Couple Widget</option>
+                    <option value="tasting">Friendship with Together</option>
+                </select>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Any special requests or comments?"></textarea>
+                
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+        <footer class="footer">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <p class="copyright">Copyright ©2024, Bean Boutique Coffee Shop</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
